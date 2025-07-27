@@ -102,8 +102,35 @@
 				Conheça novas pessoas em salas legais de bate-papo, flerte em lugares loucos, ou simplesmente relaxe com os seus amigos. A comunidade de bate-papo do Club Land está cheia de possibilidades.			</div>
 
 			
-                            <a class="cta-button" href="/download/ClublandSetup.rar">DOWNLOAD </a>
-                <div class="cta-teaser cta-teaser_01">
+                            import React from 'react';
+
+const DownloadSection = () => {
+  const gameDownloadUrl = "URL_DO_SEU_JOGO_NO_VERCEL_BLOB"; // Cole a URL aqui
+
+  return (
+    <div>
+      <h2>Baixe Nosso Jogo Incrível!</h2>
+      <p>Prepare-se para horas de diversão.</p>
+      <a
+        href={gameDownloadUrl}
+        download="ClublandSetup.rar"
+        style={{
+          display: 'inline-block',
+          padding: '10px 20px',
+          backgroundColor: '#0070f3',
+          color: 'white',
+          textDecoration: 'none',
+          borderRadius: '5px',
+          marginTop: '20px'
+        }}
+      >
+        Baixar Jogo (100 MB)
+      </a>
+    </div>
+  );
+};
+
+export default DownloadSection;
 		            125 usuários online neste momento                </div>
 		</div>
 	</div>
